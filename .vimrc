@@ -27,3 +27,8 @@ filetype on
 filetype indent on
 filetype plugin on
 
+call plug#begin('~/.vim/plugged')
+Plug 'ap/vim-css-color'
+Plug 'vim-airline/vim-airline'
+Plug 'preservim/nerdtree'
+call plug#end()
