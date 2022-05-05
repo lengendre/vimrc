@@ -21,6 +21,7 @@ set splitright
 " color
 syntax on
 colorscheme darkblue
+colorscheme gruvbox
 
 " filetype
 filetype on
@@ -47,6 +48,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 "  autocmd BufRead,BufNewFile *.rb noremap <F5> :echo "you need to install Node.js first!"
 " endif
 
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+
 call plug#begin('~/.vim/plugged')
 Plug 'ap/vim-css-color'
 Plug 'vim-airline/vim-airline'
@@ -54,4 +58,11 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
 Plug 'WolfgangMehner/c-support'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tomtom/tcomment_vim'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
+Plug 'preservim/tagbar'
+Plug 'mileszs/ack.vim'
 call plug#end()
