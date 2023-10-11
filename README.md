@@ -1,1 +1,2 @@
-# Reload .vimrc and :PlugInstall to install plugins.
+# vimrc
+Reload .vimrc and :PlugInstall to install plugins.
