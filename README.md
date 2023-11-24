@@ -1,4 +1,5 @@
 # vimrc
+```
   sudo apt update
   sudo apt install vim 
   cd ~ 
@@ -6,3 +7,4 @@
   mv vimrc .vim 
   ln -s  ./.vim/.vimrc .vimrc
   Reload .vimrc and :PlugInstall to install plugins.
+```
