@@ -35,6 +35,9 @@ autocmd WinLeave * setlocal nocursorline
 " 存檔時自動把行末多餘的空白刪除
 autocmd BufWritePre * :%s/\s\+$//e
 
+" 自動跳轉到上一次編輯的位置
+autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
 " 按下 F5 執行程式
 " if executable("ruby")
 "   autocmd BufRead,BufNewFile *.rb noremap <F5> :% w !ruby -w<Enter>
